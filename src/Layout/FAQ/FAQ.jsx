@@ -60,9 +60,7 @@ const FAQ = () => {
 		})
 		addData(index, id)
 	}
-	const check = () => {
-		console.log(handleData)
-	}
+
 	return (
 		<div className={styles.faq__block} id='faq'>
 			<div className={styles.faq__left}>
@@ -105,6 +103,17 @@ const FAQ = () => {
 					})}
 				</div>
 				<div className={styles.faq__right}>
+					{data.map(({ name, image, description, style, id }) => {
+						return (
+							<div key={id} className={styles.faq__right__item}>
+								<img src={image} alt='icon' />
+								<h2>{name}</h2>
+								<p>{description}</p>
+							</div>
+						)
+					})}
+				</div>
+				<div className={styles.faq__right_none}>
 					{handleData.map(({ name, image, description, style, id }) => {
 						return (
 							<div key={id} className={styles.faq__right__item}>
