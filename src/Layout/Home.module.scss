@@ -1,0 +1,52 @@
+.block {
+	overflow: hidden;
+	@media all and (max-width: 375px) {
+		width: 90%;
+		margin: 0 auto;
+	}
+	.img {
+		background: url('./main.png');
+		background-repeat: no-repeat;
+		background-size: contain;
+		width: 95%;
+		margin: 0 auto;
+		height: 425px;
+		margin-top: 1rem;
+		@media all and (max-width: 1340px) {
+			margin-top: 2rem;
+			height: 425px;
+		}
+		@media all and (max-width: 1200px) {
+			margin-top: 2rem;
+			height: 320px;
+		}
+		@media all and (max-width: 990px) {
+			height: 320px;
+		}
+		@media all and (max-width: 820px) {
+			height: 300px;
+		}
+		@media all and (max-width: 767px) {
+			margin-top: 2rem;
+		}
+		@media all and (max-width: 676px) {
+			height: 250px;
+		}
+		@media all and (max-width: 650px) {
+			margin-top: 3rem;
+		}
+		@media all and (max-width: 570px) {
+			margin-top: 5rem;
+			height: 200px;
+		}
+		@media all and (max-width: 425px) {
+			margin-top: 5rem;
+			height: 180px;
+		}
+		@media all and (max-width: 375px) {
+			margin-top: 5rem;
+			width: 25rem;
+			height: 200px;
+		}
+	}
+}

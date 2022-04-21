@@ -1,0 +1,173 @@
+.slider {
+	$slideBar--text--black: #1f1f1f;
+	display: flex;
+	width: calc(100% - 160px);
+	margin: 12.5rem auto;
+	align-items: center;
+	justify-content: space-between;
+	@media all and (max-width: 992px) {
+		margin: 8.75rem auto;
+		width: calc(100% - 60px);
+	}
+	@media all and (max-width: 769px) {
+		margin: 6.25rem auto;
+		width: 41.6875rem;
+	}
+	@media all and (max-width: 575px) {
+		width: calc(100% - 60px);
+	}
+	@media all and (max-width: 375px) {
+		margin: 5.3125rem 2rem;
+		// flex-direction: column;
+		width: calc(100% - 60px);
+	}
+	@media all and (max-width: 320px) {
+		margin: 5.3125rem auto;
+		flex-direction: column;
+	}
+	.slide__none {
+		display: none;
+		@media all and (max-width: 321px) {
+			display: flex;
+			flex-direction: column-reverse;
+		}
+		.slide__bar__none {
+			display: block;
+			margin-bottom: 1.875rem;
+			.slide__bar__img__none {
+				background-size: cover;
+				width: 16.875rem;
+				height: 21.25rem;
+				border: 1px solid $slideBar--text--black;
+				border-radius: 0.625rem;
+			}
+		}
+	}
+	.slide__block {
+		display: flex;
+		@media all and (max-width: 320px) {
+			display: none;
+		}
+		.slide__bar {
+			.slide__bar__img {
+				cursor: pointer;
+				width: 8rem;
+				height: 38.75rem;
+				border-radius: 0.625rem;
+				transition: 1s ease-in-out;
+				background-size: cover;
+				margin-right: 4.625rem;
+				border: 1px solid $slideBar--text--black;
+				@media all and (max-width: 1024px) {
+					width: 7rem;
+					height: 30rem;
+					margin-right: 1.125rem;
+				}
+				@media all and (max-width: 992px) {
+					width: 6.25rem;
+					height: 25rem;
+					margin-right: 1.125rem;
+				}
+				@media all and (max-width: 769px) {
+					width: 3.75rem;
+					height: 21.25rem;
+					margin-right: 0.5rem;
+				}
+				@media all and (max-width: 575px) {
+					width: 3.125rem;
+					height: 15rem;
+				}
+				@media all and (max-width: 436px) {
+					width: 2.5rem;
+					height: 13rem;
+				}
+				@media all and (max-width: 376px) {
+					width: 2.5rem;
+					height: 13rem;
+				}
+			}
+			.slide__bar__img__active {
+				cursor: pointer;
+				// background: url(./UX.png);
+				width: 31.25rem;
+				height: 38.75rem;
+				border-radius: 0.625rem;
+				transition: 1s ease-in-out;
+				background-size: cover;
+				margin-right: 4.625rem;
+				border: 1px solid;
+				@media all and (max-width: 1024px) {
+					width: 24rem;
+					height: 30rem;
+					margin-right: 1.125rem;
+				}
+				@media all and (max-width: 992px) {
+					width: 20rem;
+					height: 25rem;
+					margin-right: 1.125rem;
+				}
+				@media all and (max-width: 769px) {
+					width: 16.875rem;
+					height: 21.25rem;
+					margin-right: 0.5rem;
+				}
+				@media all and (max-width: 575px) {
+					width: 12.5rem;
+					height: 15rem;
+				}
+				@media all and (max-width: 436px) {
+					width: 10rem;
+					height: 13rem;
+				}
+				@media all and (max-width: 376px) {
+					width: 10rem;
+					height: 13rem;
+				}
+			}
+		}
+	}
+	.slide__info {
+		color: $slideBar--text--black;
+		text-align: right;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 2.25rem;
+		line-height: 50px;
+		@media all and (max-width: 992px) {
+			font-size: 28px;
+			line-height: 50px;
+		}
+		@media all and (max-width: 575px) {
+			font-size: 22px;
+			line-height: 22px;
+		}
+		@media all and (max-width: 435px) {
+			font-size: 1.1rem;
+		}
+		@media all and (max-width: 376px) {
+			font-size: 0.8rem;
+			display: none;
+		}
+		@media all and (max-width: 320px) {
+			display: none;
+		}
+	}
+	.slide__info__none {
+		display: none;
+		@media all and (max-width: 320px) {
+			display: flex;
+			align-items: center;
+			margin: 3.125rem auto 5.5625rem auto;
+		}
+		span {
+			@media all and (max-width: 320px) {
+				font-style: normal;
+				font-weight: 500;
+				font-size: 1.125rem;
+				line-height: 115.5%;
+				color: $slideBar--text--black;
+				margin-right: 1.125rem;
+			}
+		}
+	}
+}
