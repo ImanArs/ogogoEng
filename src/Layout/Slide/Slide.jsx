@@ -1,11 +1,12 @@
 import axios from 'axios'
-import React, { FC, useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 import styles from './Slide.module.scss'
 
 const Slide = () => {
 	const [isActive, setIsActive] = useState(false)
 	const [data, setData] = useState([])
-	const [count, setCount] = useState(1)
+	const URL = `http://localhost:3000/`
 
 	useEffect(() => {
 		componentDidMount()
@@ -22,7 +23,6 @@ const Slide = () => {
 				item.bool = !isActive
 			}
 		})
-		console.log(count)
 	}
 	const componentDidMount = () => {
 		if (data.length < 1) {
@@ -40,18 +40,23 @@ const Slide = () => {
 			<div className={styles.slide__block}>
 				{data.map(({ image, name, bool, id }, index) => {
 					return (
-						<div className={styles.slide__bar} key={id}>
-							<div
-								onClick={() => active(name)}
-								style={{ backgroundImage: `url(${image})` }}
-								className={
-									bool ? styles.slide__bar__img__active : styles.slide__bar__img
-								}
-							></div>
-						</div>
+						<Link to={bool ? `/${name}` : '/'}>
+							<div className={styles.slide__bar} key={id}>
+								<div
+									onClick={() => active(name)}
+									style={{ backgroundImage: `url(${image})` }}
+									className={
+										bool
+											? styles.slide__bar__img__active
+											: styles.slide__bar__img
+									}
+								></div>
+							</div>
+						</Link>
 					)
 				})}
 			</div>
+			<div className={styles.slide__img_none}></div>
 			<ul className={styles.slide__info}>
 				<li>Думай.</li>
 				<li>Учись.</li>

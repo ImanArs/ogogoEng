@@ -1,0 +1,13 @@
+{
+	"navBar": {
+		"work": "Work of students",
+		"installment": "Installment",
+		"faq": "FAQ",
+		"contacts": "Contacts",
+		"courses": "Courses"
+	},
+	"contacts": {
+		"contact": "Contact us",
+		"info": "If you still have questions, then leave your contacts in the form of an application and our manager will contact you in the near-time time.."
+	}
+}

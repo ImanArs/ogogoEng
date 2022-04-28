@@ -3,16 +3,21 @@
 	justify-content: space-between;
 	align-items: center;
 	width: 4rem;
-	h4 {
+	button {
+		border: none;
+		background: none;
 		color: var(--nav-text-color);
 		font-size: 1rem;
 		font-weight: 600;
 		cursor: pointer;
 		line-height: 118.75%;
 	}
-
+	.active {
+		border-bottom: 2px solid #ff7a00;
+		margin-bottom: -2px;
+	}
 	div {
 		border: 1px solid var(--course-text);
-		height: 1.5rem;
+		height: 1.1rem;
 	}
 }

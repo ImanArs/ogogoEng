@@ -1,10 +1,13 @@
+import { useTranslation } from 'react-i18next'
 import styles from './ContactUs.module.scss'
+import '../../i18next.js'
 
 const ContactUs = () => {
+	const { t } = useTranslation()
 	return (
 		<div className={styles.contact__wrapper} id='contact'>
 			<div className={styles.contact__left}>
-				<h3>Свяжитесь с нами</h3>
+				<h3>{t('contacts.contact')}</h3>
 				<p>
 					Если у Вас ещё остались вопросы, то оставьте Ваши контакты в форме
 					заявки и наш менеджер свяжется с Вами в близжайшее время.

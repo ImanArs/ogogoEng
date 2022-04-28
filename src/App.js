@@ -5,20 +5,22 @@ import Header from './Layout/Header/Header'
 import MainJS from './Layout/MainJS/MainJS'
 import MainUX from './Layout/MainUX/MainUX'
 import MainPython from './Layout/MainPython/MainPython'
-
+import { Suspense } from 'react'
 import Home from './Layout/Home'
 
 function App() {
 	return (
 		<div className='App'>
-			<Header />
-			<Routes>
-				<Route path='/' element={<Home />} />
-				<Route path='/js' element={<MainJS />} />
-				<Route path='/ux' element={<MainUX />} />
-				<Route path='/python' element={<MainPython />} />
-			</Routes>
-			<Footer />
+			<Suspense fallback={''}>
+				<Header />
+				<Routes>
+					<Route path='/' element={<Home />} />
+					<Route path='/js' element={<MainJS />} />
+					<Route path='/ux' element={<MainUX />} />
+					<Route path='/python' element={<MainPython />} />
+				</Routes>
+				<Footer />
+			</Suspense>
 		</div>
 	)
 }
