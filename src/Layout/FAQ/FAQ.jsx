@@ -8,7 +8,7 @@ const FAQ = () => {
 	const [handleData, setHandleData] = useState([])
 	const [isActive, setIsActive] = useState(false)
 	const [count, setCount] = useState([])
-	const [lem, setLem] = useState()
+	const [lem, setLem] = useState(0)
 
 	useEffect(() => {
 		getData()
@@ -60,7 +60,34 @@ const FAQ = () => {
 		})
 		addData(index, id)
 	}
-
+	const changeItemBlock = (index, id, name) => {
+		let uuid = 0
+		handleData.map(item => {
+			if (item.name === name) {
+				uuid = ++item.id
+			}
+		})
+		count.map(item => {
+			if (item.bool === true) {
+				item.bool = false
+				setLem(item.id)
+			}
+			if (item.name == lem) {
+				setIsActive(true)
+				item.bool = true
+				console.log(item.name)
+			}
+		})
+		handleData.map(item => {
+			let i = 0
+			if (uuid === 6) {
+			} else {
+				if (item.id == uuid) {
+					data[i] = item
+				}
+			}
+		})
+	}
 	return (
 		<div className={styles.faq__block} id='faq'>
 			<div className={styles.faq__left}>
@@ -93,7 +120,7 @@ const FAQ = () => {
 					{count.map(({ bool, id }, index) => {
 						return (
 							<div
-								key={index}
+								key={id}
 								className={
 									bool ? styles.faq__middle__item : styles.faq__middle__none
 								}
@@ -103,9 +130,13 @@ const FAQ = () => {
 					})}
 				</div>
 				<div className={styles.faq__right}>
-					{data.map(({ name, image, description, style, id }) => {
+					{data.map(({ name, image, description, style, id, uuid }, index) => {
 						return (
-							<div key={id} className={styles.faq__right__item}>
+							<div
+								key={uuid}
+								className={styles.faq__right__item}
+								onClick={() => changeItemBlock(index, id, name)}
+							>
 								<img src={image} alt='icon' />
 								<h2>{name}</h2>
 								<p>{description}</p>
@@ -116,7 +147,7 @@ const FAQ = () => {
 				<div className={styles.faq__right_none}>
 					{handleData.map(({ name, image, description, style, id }) => {
 						return (
-							<div key={id} className={styles.faq__right__item}>
+							<div key={name} className={styles.faq__right__item}>
 								<img src={image} alt='icon' />
 								<h2>{name}</h2>
 								<p>{description}</p>

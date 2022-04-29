@@ -40,8 +40,8 @@ const Slide = () => {
 			<div className={styles.slide__block}>
 				{data.map(({ image, name, bool, id }, index) => {
 					return (
-						<Link to={bool ? `/${name}` : '/'}>
-							<div className={styles.slide__bar} key={id}>
+						<Link key={id} to={bool ? `/${name}` : '/'}>
+							<div className={styles.slide__bar}>
 								<div
 									onClick={() => active(name)}
 									style={{ backgroundImage: `url(${image})` }}
@@ -62,6 +62,7 @@ const Slide = () => {
 				<li>Учись.</li>
 				<li>Создавай</li>
 			</ul>
+
 			<div className={styles.slide__info__none}>
 				<span>Курсы</span>
 				<svg
@@ -82,15 +83,17 @@ const Slide = () => {
 				</svg>
 			</div>
 			<div className={styles.slide__none}>
-				{data.map(({ image, name, id }, index) => {
+				{data.map(({ image, name, id, uu }, index) => {
 					return (
-						<div className={styles.slide__bar__none} key={id}>
-							<div
-								style={{ backgroundImage: `url(${image})` }}
-								className={styles.slide__bar__img__none}
-								key={name}
-							></div>
-						</div>
+						<Link key={id} to={`/${name}`}>
+							<div className={styles.slide__bar__none}>
+								<div
+									style={{ backgroundImage: `url(${image})` }}
+									className={styles.slide__bar__img__none}
+									key={name}
+								></div>
+							</div>
+						</Link>
 					)
 				})}
 			</div>
