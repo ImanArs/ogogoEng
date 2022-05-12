@@ -53,7 +53,6 @@ const Home = () => {
 			<FAQ setInfo={setInfo} info={info} />
 			<Installment />
 			<Works />
-			<Footer />
 		</>
 	)
 }

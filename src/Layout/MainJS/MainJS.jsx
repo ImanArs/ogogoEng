@@ -55,7 +55,9 @@ const MainJS = () => {
 						<div className={styles.main__block__left__header}>
 							<span>JavaScript</span>
 							<span>{t('js.title')}</span>
-							<button className={styles.sign}>{t('js.contact')}</button>
+							<button className={styles.sign}>
+								<a href='#contact'>{t('js.contact')}</a>
+							</button>
 						</div>
 					</div>
 					<div className={styles.main__block__left__info}>
@@ -264,7 +266,9 @@ const MainJS = () => {
 					</div>
 				</div>
 			</div>
-			<ContactUs />
+			<div id={styles.contact}>
+				<ContactUs />
+			</div>
 		</>
 	)
 }

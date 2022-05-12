@@ -21,7 +21,7 @@
 	}
 
 	.main__block__left {
-		max-width: 1440px;
+		max-width: 1300px;
 
 		width: 100%;
 		display: flex;
@@ -139,7 +139,7 @@
 				border-radius: 10px;
 				border: 1px solid var(--course-text);
 				padding: 10px 30px;
-				// Text
+				cursor: pointer;
 				color: var(--nav-text);
 				font-weight: 500;
 				font-size: 1.125rem;
@@ -615,5 +615,7 @@
 				}
 			}
 		}
+	}
+	.contact {
 	}
 }

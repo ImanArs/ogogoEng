@@ -4,6 +4,7 @@ import MainUX from './Layout/MainUX/MainUX'
 import MainPython from './Layout/MainPython/MainPython'
 import { Suspense } from 'react'
 import Home from './Layout/Home'
+import Footer from './Layout/Footer/Footer'
 
 function App() {
 	return (
@@ -16,6 +17,7 @@ function App() {
 					<Route path='/python' element={<MainPython />} />
 				</Routes>
 			</Suspense>
+			<Footer />
 		</div>
 	)
 }
