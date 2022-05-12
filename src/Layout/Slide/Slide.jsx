@@ -2,11 +2,13 @@ import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import styles from './Slide.module.scss'
+import { useTranslation } from 'react-i18next'
+import '../../i18next.js'
 
 const Slide = () => {
+	const { t } = useTranslation()
 	const [isActive, setIsActive] = useState(false)
 	const [data, setData] = useState([])
-	const URL = `http://localhost:3000/`
 
 	useEffect(() => {
 		componentDidMount()
@@ -18,7 +20,7 @@ const Slide = () => {
 			if (item.bool === true) {
 				item.bool = false
 			}
-			if (last == item.name) {
+			if (last === item.name) {
 				setIsActive(true)
 				item.bool = !isActive
 			}
@@ -40,27 +42,43 @@ const Slide = () => {
 			<div className={styles.slide__block}>
 				{data.map(({ image, name, bool, id }, index) => {
 					return (
-						<Link key={id} to={bool ? `/${name}` : '/'}>
-							<div className={styles.slide__bar}>
-								<div
-									onClick={() => active(name)}
-									style={{ backgroundImage: `url(${image})` }}
-									className={
-										bool
-											? styles.slide__bar__img__active
-											: styles.slide__bar__img
-									}
-								></div>
-							</div>
-						</Link>
+						<div key={index}>
+							{name === 'intensive' ? (
+								<div key={id} className={styles.slide__bar}>
+									<div
+										onClick={() => active(name)}
+										style={{ backgroundImage: `url(${image})` }}
+										className={
+											bool
+												? styles.slide__bar__img__active
+												: styles.slide__bar__img
+										}
+									></div>
+								</div>
+							) : (
+								<Link key={id} to={bool ? `/${name}` : '/'}>
+									<div className={styles.slide__bar}>
+										<div
+											onClick={() => active(name)}
+											style={{ backgroundImage: `url(${image})` }}
+											className={
+												bool
+													? styles.slide__bar__img__active
+													: styles.slide__bar__img
+											}
+										></div>
+									</div>
+								</Link>
+							)}
+						</div>
 					)
 				})}
 			</div>
 			<div className={styles.slide__img_none}></div>
 			<ul className={styles.slide__info}>
-				<li>Думай.</li>
-				<li>Учись.</li>
-				<li>Создавай</li>
+				<li>{t('slide.think')}</li>
+				<li>{t('slide.learn')}.</li>
+				<li>{t('slide.create')}</li>
 			</ul>
 
 			<div className={styles.slide__info__none}>
@@ -75,10 +93,10 @@ const Slide = () => {
 					<path
 						d='M16.9201 0.949997L10.4001 7.47C9.63008 8.24 8.37008 8.24 7.60008 7.47L1.08008 0.949997'
 						stroke='#292D32'
-						stroke-width='1.5'
-						stroke-miterlimit='10'
-						stroke-linecap='round'
-						stroke-linejoin='round'
+						strokeWidth='1.5'
+						strokeMiterlimit='10'
+						strokeLinecap='round'
+						strokeLinejoin='round'
 					/>
 				</svg>
 			</div>

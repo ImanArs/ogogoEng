@@ -290,7 +290,6 @@
 				border-radius: 50%;
 				margin: 0.625rem 0.625rem 0.625rem 0;
 				transition: 1s;
-				cursor: pointer;
 				@media all and (max-width: 1024px) {
 					width: 0.75rem;
 					height: 0.75rem;
@@ -315,7 +314,6 @@
 				margin: 0.625rem 0.625rem 0.625rem 0;
 				transition: 1s;
 				background: $faq--itemBackground--slider;
-				cursor: pointer;
 				@media all and (max-width: 1024px) {
 					width: 0.75rem;
 					height: 0.75rem;
@@ -368,6 +366,9 @@
 				padding: 2.5rem 0 0 0;
 				opacity: 1;
 				cursor: pointer;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
 				@media all and (max-width: 1024px) {
 					width: 24.875rem;
 					height: 15.625rem;
@@ -538,7 +539,7 @@
 				transition: 1s ease-in-out;
 				width: 38.75rem;
 				height: 26.25rem;
-				padding: 2.5rem 0 0 0;
+				padding: 0;
 				opacity: 1;
 				@media all and (max-width: 1024px) {
 					width: 24.875rem;

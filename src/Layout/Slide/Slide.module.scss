@@ -60,23 +60,23 @@
 		.slide__bar {
 			.slide__bar__img {
 				cursor: pointer;
-				width: 8rem;
+				width: 25rem;
 				height: 31rem;
 				border-radius: 0.625rem;
 				transition: 1s ease-in-out;
 				background-size: cover;
 				margin-right: 2rem;
 				border: 1px solid $slideBar--text--black;
+				@media all and (max-width: 1440px) {
+					width: 8rem;
+					height: 31rem;
+					margin-right: 1.125rem;
+				}
 				@media all and (max-width: 1050px) {
 					width: 5.5rem;
 					height: 28rem;
 					margin-right: 1.125rem;
 				}
-				// @media all and (max-width: 992px) {
-				// 	width: 6.25rem;
-				// 	height: 25rem;
-				// 	margin-right: 1.125rem;
-				// }
 				@media all and (max-width: 769px) {
 					width: 3.75rem;
 					height: 21.25rem;
@@ -103,13 +103,18 @@
 				border-radius: 0.625rem;
 				transition: 1s ease-in-out;
 				background-size: cover;
-				margin-right: 4.625rem;
+				margin-right: 3rem;
 				border: 1px solid;
-				// @media all and (max-width: 1024px) {
-				// 	width: 24rem;
-				// 	height: 30rem;
-				// 	margin-right: 1.125rem;
-				// }
+				@media all and (max-width: 1440px) {
+					width: 25rem;
+					height: 31rem;
+					margin-right: 1.125rem;
+				}
+				@media all and (max-width: 1050px) {
+					width: 23rem;
+					height: 28rem;
+					margin-right: 1.125rem;
+				}
 				// @media all and (max-width: 992px) {
 				// 	width: 20rem;
 				// 	height: 25rem;
@@ -132,6 +137,11 @@
 					width: 10rem;
 					height: 13rem;
 				}
+			}
+			.slide__bar__img__active {
+				-webkit-box-shadow: 4px 4px 30px 10px rgba(0, 0, 0, 0.2);
+				-moz-box-shadow: 4px 4px 30px 10px rgba(0, 0, 0, 0.2);
+				box-shadow: 4px 4px 30px 10px rgba(0, 0, 0, 0.2);
 			}
 		}
 	}

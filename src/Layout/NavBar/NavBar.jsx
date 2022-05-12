@@ -26,16 +26,16 @@ const NavBar = () => {
 			) : (
 				<ul className={styles.nav}>
 					<li>
-						<Link to='/'>{t('navBar.work')}</Link>
+						<Link to='/#works'>{t('navBar.work')}</Link>
 					</li>
 					<li>
-						<Link to='/'>{t('navBar.installment')}</Link>
+						<Link to='/#installment'>{t('navBar.installment')}</Link>
 					</li>
 					<li>
-						<Link to='/'>{t('navBar.faq')}</Link>
+						<Link to='/#faq'>{t('navBar.faq')}</Link>
 					</li>
 					<li>
-						<Link to='/'>{t('navBar.contacts')}</Link>
+						<Link to='/#footer'>{t('navBar.contacts')}</Link>
 					</li>
 				</ul>
 			)}

@@ -4,7 +4,7 @@ import DropDown from '../DropDown/DropDown'
 import ChangeLanguage from '../ChangeLanguage/ChangeLanguage'
 import { Link, useLocation } from 'react-router-dom'
 
-const Header = () => {
+const Header = ({ setInfo, info }) => {
 	let location = useLocation()
 	return (
 		<header className={styles.header}>
@@ -39,7 +39,7 @@ const Header = () => {
 			</Link>
 			<NavBar />
 			<div className={styles.header__right}>
-				<ChangeLanguage />
+				<ChangeLanguage setInfo={setInfo} info={info} />
 				<DropDown />
 			</div>
 		</header>

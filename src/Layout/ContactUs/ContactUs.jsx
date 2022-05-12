@@ -8,10 +8,7 @@ const ContactUs = () => {
 		<div className={styles.contact__wrapper} id='contact'>
 			<div className={styles.contact__left}>
 				<h3>{t('contacts.contact')}</h3>
-				<p>
-					Если у Вас ещё остались вопросы, то оставьте Ваши контакты в форме
-					заявки и наш менеджер свяжется с Вами в близжайшее время.
-				</p>
+				<p>{t('contacts.info')}</p>
 			</div>
 			<form
 				target='_blank'
@@ -22,12 +19,12 @@ const ContactUs = () => {
 				<input
 					type='number'
 					className={styles.input}
-					placeholder='Введите номер'
+					placeholder={t('contacts.inp')}
 					required
 					name='phone'
 				></input>
 				<button className={styles.send} type='submit'>
-					Отправить
+					{t('contacts.btn')}
 				</button>
 			</form>
 		</div>

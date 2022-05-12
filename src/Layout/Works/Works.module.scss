@@ -9,7 +9,7 @@
 	align-items: center;
 
 	@media all and (max-width: 992px) {
-		width: calc(100vw - 160px);
+		width: calc(100vw - 100px);
 		margin: 8.75rem auto 7.5rem auto;
 	}
 	@media all and (max-width: 769px) {
@@ -93,13 +93,14 @@
 			position: relative;
 			overflow: hidden;
 			border-radius: 10px;
+			cursor: pointer;
 			@media all and (max-width: 1024px) {
 				width: rem(304);
 				height: 24rem;
 			}
 			@media all and (max-width: 992px) {
-				width: 18rem;
-				height: 22.5rem;
+				width: 16rem;
+				height: 22rem;
 			}
 			@media all and (max-width: 769px) {
 				width: 14rem;
@@ -126,6 +127,10 @@
 				img {
 					width: 25rem;
 					height: 31rem;
+					@media all and (max-width: 992px) {
+						width: 18rem;
+						height: 22.5rem;
+					}
 					@media all and (max-width: 769px) {
 						width: 14rem;
 						height: 17.25rem;
@@ -157,8 +162,8 @@
 				}
 				@media all and (max-width: 992px) {
 					padding: 0.875rem;
-					width: 18rem;
-					height: 14.75rem;
+					width: 16rem;
+					height: 16.75rem;
 				}
 				@media all and (max-width: 769px) {
 					height: 17.5rem;
@@ -258,20 +263,28 @@
 			overflow: hidden;
 			height: 11.75rem;
 			width: 25rem;
+			cursor: pointer;
 			@media all and (max-width: 1024px) {
 				width: 19rem;
 				height: 10rem;
 				margin-top: 1.25rem;
 			}
 			@media all and (max-width: 992px) {
-				width: 18rem;
-				height: 8.5rem;
+				width: 16rem;
+				height: 9rem;
 				margin-top: 1.25rem;
 			}
 			@media all and (max-width: 769px) {
 				display: none;
 			}
-
+			.faruh__img {
+				img {
+					@media all and (max-width: 992px) {
+						width: 16rem;
+						height: 9rem;
+					}
+				}
+			}
 			.faruh__text {
 				text-align: start;
 				color: $color__text__white;
@@ -288,7 +301,7 @@
 				@media all and (max-width: 992px) {
 					padding: 0.875rem 2.375rem 1.75rem 0.875rem;
 					width: 18rem;
-					height: 8.5rem;
+					height: 9rem;
 				}
 				@media all and (max-width: 769px) {
 					padding: 0.75rem 0.1875rem 0.75rem 0.75rem;
@@ -358,10 +371,10 @@
 		.works__middle {
 			margin-left: 2.5rem;
 			@media all and (max-width: 1024px) {
-				margin-left: 1.5rem;
+				margin-left: 1.25rem;
 			}
 			@media all and (max-width: 992px) {
-				margin-left: 1.25rem;
+				margin-left: 0.5rem;
 			}
 			@media all and (max-width: 769px) {
 				margin-left: 0.625rem;
@@ -386,12 +399,13 @@
 				position: relative;
 				overflow: hidden;
 				border-radius: 10px;
+				cursor: pointer;
 				@media all and (max-width: 1024px) {
 					width: 24rem;
 					height: 13rem;
 				}
 				@media all and (max-width: 992px) {
-					width: 20.0625rem;
+					width: 18rem;
 					height: 11.75rem;
 				}
 				@media all and (max-width: 769px) {
@@ -406,13 +420,20 @@
 				@media all and (max-width: 320px) {
 					display: none;
 				}
-
+				.ratmir__img {
+					img {
+						@media all and (max-width: 992px) {
+							width: 18rem;
+						}
+					}
+				}
 				.ratmir__text {
 					text-align: start;
 					.ratmir__text__none {
 						display: none;
 						@media all and (max-width: 769px) {
 							display: block;
+							cursor: pointer;
 							font-size: 0.75rem;
 							line-height: 14px;
 						}
@@ -524,6 +545,7 @@
 				height: 11.75rem;
 				width: 25rem;
 				display: none;
+				cursor: pointer;
 				@media all and (max-width: 992px) {
 					width: 18rem;
 					height: 8.5rem;
@@ -533,7 +555,7 @@
 					width: 16rem;
 					margin-top: 0.625rem;
 					display: block;
-					margin-top: 1.5rem;
+					margin-top: 1rem;
 				}
 				@media all and (max-width: 575px) {
 					width: 14.5rem;
@@ -545,12 +567,10 @@
 					display: none;
 				}
 				.faruh__img__none {
-					@media all and (max-width: 769px) {
-						margin-left: -15px;
-					}
 					img {
 						@media all and (max-width: 769px) {
 							width: 15rem;
+							height: 7.5rem;
 						}
 					}
 				}
@@ -640,12 +660,13 @@
 				position: relative;
 				overflow: hidden;
 				height: 26.75rem;
+				cursor: pointer;
 				@media all and (max-width: 1024px) {
 					width: 24rem;
 					height: 23rem;
 				}
 				@media all and (max-width: 992px) {
-					width: 20.0625rem;
+					width: 18rem;
 					height: 19.25rem;
 					margin-top: 1.25rem;
 				}
@@ -668,6 +689,9 @@
 
 				.firuza__img {
 					img {
+						@media all and (max-width: 992px) {
+							width: 18rem;
+						}
 						@media all and (max-width: 769px) {
 							width: 16rem;
 							height: 17.3125rem;
@@ -703,8 +727,8 @@
 					}
 					@media all and (max-width: 992px) {
 						padding: 0.875rem;
-						width: 20.0625rem;
-						height: 10.3125rem;
+						width: 18rem;
+						height: 12rem;
 					}
 					@media all and (max-width: 769px) {
 						width: 16rem;
@@ -787,7 +811,7 @@
 					transform: translateY(-158%);
 				}
 				@media all and (max-width: 992px) {
-					transform: translateY(-192%);
+					transform: translateY(-150%);
 				}
 				@media all and (max-width: 769px) {
 					transform: translateY(-100%);
@@ -809,14 +833,15 @@
 				position: relative;
 				margin-left: 2.5rem;
 				overflow: hidden;
+				cursor: pointer;
 				@media all and (max-width: 1024px) {
 					margin-left: 1.5rem;
 					width: 16rem;
 					height: 34.2rem;
 				}
 				@media all and (max-width: 992px) {
-					margin-left: 1.25rem;
-					width: 11.4375rem;
+					margin-left: 0.5rem;
+					width: 20rem;
 					height: 32.3125rem;
 				}
 				@media all and (max-width: 769px) {
@@ -859,16 +884,19 @@
 					position: absolute;
 					color: $color__text__white;
 					z-index: 5;
-					top: -40%;
+					top: -50%;
+					height: 21rem;
 					@media all and (max-width: 1024px) {
 						top: -55%;
 					}
 					@media all and (max-width: 992px) {
 						padding: 0.75rem;
+						width: 18rem;
 					}
 					@media all and (max-width: 769px) {
 						width: 15.4375rem;
-						top: -55%;
+						top: -70%;
+						height: 12rem;
 					}
 					@media all and (max-width: 575px) {
 						top: 114px;
@@ -948,19 +976,17 @@
 			}
 			.alex__block:hover .alex__text {
 				transition: 1s;
-				transform: translateY(105%);
+				transform: translateY(108%);
 				@media all and (max-width: 992px) {
-					transform: translateY(103%);
-				}
-				@media all and (max-width: 992px) {
-					transform: translateY(103%);
+					transform: translateY(200%);
 				}
 				@media all and (max-width: 769px) {
-					transform: translateY(92%);
+					transform: translateY(100%);
 				}
 				@media all and (max-width: 575px) {
 					width: 16rem;
 					transform: translateX(-16.9rem);
+					top: 0;
 				}
 				@media all and (max-width: 320px) {
 					width: 15rem;
