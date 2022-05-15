@@ -60,7 +60,7 @@
 		.slide__bar {
 			.slide__bar__img {
 				cursor: pointer;
-				width: 25rem;
+				width: 19rem;
 				height: 31rem;
 				border-radius: 0.625rem;
 				transition: 1s ease-in-out;
@@ -77,7 +77,7 @@
 					height: 28rem;
 					margin-right: 1.125rem;
 				}
-				@media all and (max-width: 769px) {
+				@media all and (max-width: 770px) {
 					width: 3.75rem;
 					height: 21.25rem;
 					margin-right: 0.5rem;
@@ -97,7 +97,6 @@
 			}
 			.slide__bar__img__active {
 				cursor: pointer;
-				// background: url(./UX.png);
 				width: 25rem;
 				height: 31rem;
 				border-radius: 0.625rem;
@@ -120,7 +119,7 @@
 				// 	height: 25rem;
 				// 	margin-right: 1.125rem;
 				// }
-				@media all and (max-width: 769px) {
+				@media all and (max-width: 770px) {
 					width: 16.875rem;
 					height: 21.25rem;
 					margin-right: 0.5rem;

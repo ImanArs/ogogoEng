@@ -3,6 +3,7 @@
 	margin: 9.375rem 0 8.75rem 0;
 	@media all and (max-width: 325px) {
 		width: 100% !important;
+		margin-top: 2rem;
 	}
 	img {
 		width: 100% !important;
@@ -26,6 +27,7 @@
 		}
 		@media all and (max-width: 325px) {
 			height: 16rem !important;
+			margin: 0;
 		}
 	}
 

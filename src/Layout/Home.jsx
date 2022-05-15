@@ -25,13 +25,15 @@ const Home = () => {
 			<Header setInfo={setInfo} info={info} />
 			<div className={styles.block}>
 				{info === 'ru' ? (
-					<div className={styles.home}>
-						<div className={styles.home__block}>
-							<span>{t('home.Courses')}</span>
-							<span>{t('home.prog')}</span>
+					<div className={styles.home__container}>
+						<div className={styles.home__wrapper}>
+							<div className={styles.home__block}>
+								<span>{t('home.Courses')}</span>
+								<span>{t('home.prog')}</span>
+							</div>
+							<h1>{t('home.academy')}</h1>
+							<h2>OGOGO</h2>
 						</div>
-						<h1>{t('home.academy')}</h1>
-						<h2>OGOGO</h2>
 
 						<img className={styles.img} src={image} alt='img' />
 					</div>

@@ -22,7 +22,6 @@
 
 	.main__block__left {
 		max-width: 1300px;
-
 		width: 100%;
 		display: flex;
 		justify-content: space-between;
@@ -536,7 +535,7 @@
 			}
 			.dropdown_none {
 				padding: 1rem 2rem;
-
+				transition: 1s;
 				div {
 					margin-bottom: 15px;
 					font-style: normal;
@@ -550,6 +549,7 @@
 				visibility: visible;
 				width: 90%;
 				padding: 1rem 2rem;
+				transition: 0.1s;
 				div {
 					margin-bottom: 15px;
 					font-style: normal;
