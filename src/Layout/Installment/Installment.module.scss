@@ -34,7 +34,7 @@
 	.installment__block {
 		position: absolute;
 		color: #fff;
-		top: 37%;
+		top: 25%;
 		left: 5%;
 		text-align: start;
 		@media all and (max-width: 770px) {
@@ -59,6 +59,23 @@
 				width: 17rem;
 				height: 25rem;
 			}
+		}
+		button {
+			margin-top: 20px;
+			color: #fff;
+			padding: 14px 24px;
+			font-weight: 500;
+			font-size: 16px;
+			line-height: 19px;
+			border: 1px solid rgb(158, 158, 158);
+			border-radius: 10px;
+			background: none;
+			cursor: pointer;
+			transition: 1s;
+		}
+		button:hover {
+			color: black;
+			background: rgb(194, 194, 194);
 		}
 	}
 	.icon__block {

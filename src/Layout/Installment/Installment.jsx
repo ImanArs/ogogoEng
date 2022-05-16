@@ -13,6 +13,9 @@ const Installment = () => {
 			<div className={styles.installment__block}>
 				<h2>{t('installment.installments')}</h2>
 				<p>{t('installment.down')}</p>
+				<button>
+					<a href='#contact'>{t('installment.req')}</a>{' '}
+				</button>
 			</div>
 			<div className={styles.icon__block}>
 				<svg

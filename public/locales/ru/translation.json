@@ -27,7 +27,8 @@
 	},
 	"installment": {
 		"installments": "Беcпроцентная рассрочка",
-		"down": "Рассрочка без первоначального взноса и переплат до 12 месяцев. Срок рассмотрения рассрочки от 2 до 30 минут. Оставляй заявку"
+		"down": "Рассрочка без первоначального взноса и переплат до 12 месяцев. Срок рассмотрения рассрочки от 1 до 2 дней. ",
+		"req": "Оставляй заявку"
 	},
 	"Work": {
 		"title": "Выпускные работы студентов",
@@ -151,6 +152,11 @@
 				"one": "1. Вызов fetch внутри промиса",
 				"two": "2. Асинхронные функции",
 				"three": "3. Обработка ошибок в асинхронных функциях"
+			},
+			"four": "Четвертый месяц",
+			"fourMonth": {
+				"one": "1.  TypeScript",
+				"two": "2.  WebPack"
 			}
 		}
 	},
@@ -190,8 +196,14 @@
 			},
 			"third": "Третий месяц",
 			"ThirdMonth": {
-				"one": "1. Django, HTML/CSS",
-				"two": "2. Restful API, Django REST Framework",
+				"one": "1. FLASK",
+				"two": "2. DJANGO, HTML-CSSk",
+				"three": "3. REDIS(ASYNC)"
+			},
+			"four": "Четвертый месяц",
+			"fourMonth": {
+				"one": "1.  RESTFUL API, DJANGO REST",
+				"two": "2.  FIREBASE GOOGLE, FACEBOOK AUTH",
 				"three": "3. Docker, Deploy"
 			}
 		}

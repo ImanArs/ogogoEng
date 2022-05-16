@@ -12,7 +12,7 @@ const ContactUs = () => {
 			</div>
 			<form
 				target='_blank'
-				action='https://formsubmit.co/islamjan.m.m@gmail.com'
+				action='https://formsubmit.co/ogogoacademy@gmail.com'
 				method='POST'
 				className={styles.contact__right}
 			>

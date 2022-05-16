@@ -17,7 +17,8 @@ const MainPython = () => {
 	const [info, setInfo] = useState()
 	const [one, setOne] = useState(false)
 	const [two, setTwo] = useState(true)
-	const [three, setЕhree] = useState(true)
+	const [three, setThree] = useState(true)
+	const [four, setFour] = useState(true)
 
 	const click = i => {
 		if (i === 'one') {
@@ -25,17 +26,35 @@ const MainPython = () => {
 				setTwo(true)
 			}
 			if (three === false) {
-				setЕhree(true)
+				setThree(true)
 			}
+			if (four === false) {
+				setFour(true)
+			}
+			console.log(one, two, three, four)
 			setOne(!one)
 		} else if (i === 'two') {
 			if (one === false) {
 				setOne(true)
 			}
 			if (three === false) {
-				setЕhree(true)
+				setThree(true)
+			}
+			if (four === false) {
+				setFour(true)
 			}
 			setTwo(!two)
+		} else if (i === 'three') {
+			if (one === false) {
+				setOne(true)
+			}
+			if (two === false) {
+				setTwo(true)
+			}
+			if (four === false) {
+				setFour(true)
+			}
+			setThree(!three)
 		} else {
 			if (one === false) {
 				setOne(true)
@@ -43,7 +62,10 @@ const MainPython = () => {
 			if (two === false) {
 				setTwo(true)
 			}
-			setЕhree(!three)
+			if (three === false) {
+				setThree(true)
+			}
+			setFour(!four)
 		}
 	}
 	return (
@@ -298,6 +320,42 @@ const MainPython = () => {
 							</div>
 							<div className={styles.dropdown__list__item}>
 								<a href='#'>{t('python.program.ThirdMonth.three')}</a>
+							</div>
+						</div>
+					</div>
+					<div className={styles.dropdown} onClick={() => click('four')}>
+						<div
+							className={four ? styles.dropdown__select : styles.dropdown__sel}
+						>
+							<span className={styles.select}>{t('python.program.four')}</span>
+							<svg
+								width='36'
+								height='36'
+								viewBox='0 0 36 36'
+								fill='none'
+								xmlns='http://www.w3.org/2000/svg'
+							>
+								<path
+									d='M29.8791 13.4248L20.0991 23.2048C18.9441 24.3598 17.0541 24.3598 15.8991 23.2048L6.11914 13.4248'
+									stroke='#1F1F1F'
+									strokeWidth='1.5'
+									strokeMiterlimit='10'
+									strokeLinecap='round'
+									strokeLinejoin='round'
+								/>
+							</svg>
+						</div>
+						<div
+							className={four ? styles.dropdown__listt : styles.dropdown_none}
+						>
+							<div className={styles.dropdown__list__item}>
+								<a href='#'>{t('python.program.fourMonth.one')}</a>
+							</div>
+							<div className={styles.dropdown__list__item}>
+								<a href='#'>{t('python.program.fourMonth.two')}</a>
+							</div>
+							<div className={styles.dropdown__list__item}>
+								<a href='#'>{t('python.program.fourMonth.three')}</a>
 							</div>
 						</div>
 					</div>

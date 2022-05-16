@@ -50,7 +50,7 @@ const Home = () => {
 				)}
 			</div>
 
-			<ContactUs />
+			<ContactUs id='contact' />
 			<Slide />
 			<FAQ setInfo={setInfo} info={info} />
 			<Installment />

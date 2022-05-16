@@ -27,7 +27,8 @@
 	},
 	"installment": {
 		"installments": "Payment by installments",
-		"down": "Installment without down payment and overpayments up to 12 months. The term for consideration of installments is from 2 to 30 minutes. Leave a request"
+		"down": "Installment without down payment and overpayments up to 12 months. The term for consideration of installments is from 1 to 2 days.",
+		"req": "Leave a request"
 	},
 	"Work": {
 		"title": "Graduation works of students",
@@ -151,6 +152,11 @@
 				"one": "1. Calling fetch inside a promise",
 				"two": "2. Asynchronous Functions",
 				"three": "3. Handling Errors in Asynchronous Functions"
+			},
+			"four": "Fourth month",
+			"fourMonth": {
+				"one": "1.  TypeScript",
+				"two": "2.  WebPack"
 			}
 		}
 	},
@@ -193,6 +199,12 @@
 				"one": "1. Django, HTML/CSS",
 				"two": "2. Restful API, Django REST Framework",
 				"three": "3 Docker, Desploy"
+			},
+			"four": "Fourth month",
+			"fourMonth": {
+				"one": "1.  RESTFUL API, DJANGO REST",
+				"two": "2.  FIREBASE GOOGLE, FACEBOOK AUTH",
+				"three": "3. Docker, Deploy"
 			}
 		}
 	}
