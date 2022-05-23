@@ -106,7 +106,7 @@ const FAQ = ({ setInfo, info }) => {
 				item.bool = true
 			}
 		})
-	}
+	} 
 	return (
 		<div className={styles.faq__block} id='faq'>
 			<div className={styles.faq__left}>

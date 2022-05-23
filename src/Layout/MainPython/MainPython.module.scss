@@ -3,9 +3,10 @@
 	$main__background__orange: #fab475;
 	$main__text__black: #1f1f1f;
 	$main__button__text: rgba(31, 31, 31, 0.69);
+	max-width: 1440px;
 	width: 100%;
-	margin: 9.5rem 0;
-	padding-left: 2rem;
+	margin: 9.5rem auto;
+	padding: 0 1rem;
 	overflow: hidden;
 	@media all and (max-width: 992px) {
 		padding-left: 1.875rem;
@@ -21,11 +22,14 @@
 	}
 
 	.main__block__left {
-		max-width: 1300px;
+		max-width: 1850px;
 		width: 100%;
 		display: flex;
 		justify-content: space-between;
 		flex-wrap: wrap;
+		@media all and (max-width: 1440px) {
+			max-width: 1700px;
+		}
 		@media all and (max-width: 1024px) {
 			width: 100%;
 			align-items: center;
@@ -37,15 +41,26 @@
 		@media all and (max-width: 770px) {
 			align-items: flex-start;
 		}
-
+		@media all and (max-width: 702px) {
+			justify-content: center;
+		}
 		@media all and (max-width: 425px) {
 			justify-content: center;
 		}
 		.main__block__left__header {
 			display: flex;
+			width: 825px;
 			flex-direction: column;
 			text-align: start;
 			order: -1;
+
+			@media all and (max-width: 1365px) {
+				width: auto;
+			}
+			@media all and (max-width: 702px) {
+				padding-left: 5px;
+				text-align: center;
+			}
 			@media all and (max-width: 425px) {
 				text-align: center;
 			}
@@ -157,7 +172,9 @@
 					font-size: 1rem;
 					padding: 10px 20px;
 				}
-
+				@media all and (max-width: 702px) {
+					margin: 40px auto 0 auto;
+				}
 				@media all and (max-width: 575px) {
 					font-size: 0.75rem;
 					padding: 8px 18px;
@@ -230,6 +247,9 @@
 			@media all and (max-width: 770px) {
 				width: 20.25rem;
 				height: 20.25rem;
+			}
+			@media all and (max-width: 702px) {
+				margin-top: 2rem;
 			}
 			@media all and (max-width: 575px) {
 				width: 12.5rem;
@@ -524,7 +544,7 @@
 		.dropdown {
 			box-shadow: 0px -8px 10px 3px rgba(0, 0, 0, 0.25);
 			border-radius: 20px;
-			width: 93%;
+			width: 100%;
 			margin-bottom: 3rem;
 			cursor: pointer;
 			span {

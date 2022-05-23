@@ -38,13 +38,16 @@ const Home = () => {
 						<img className={styles.img} src={image} alt='img' />
 					</div>
 				) : (
-					<div className={styles.home_en}>
-						<h2>OGOGO</h2>
-						<h1>{t('home.academy')}</h1>
-						<div className={styles.home__block_en}>
-							<span>{t('home.Courses')}</span>
-							<span>{t('home.prog')}</span>
+					<div className={styles.home__container_en}>
+						<div className={styles.home__wrapper_en}>
+							<div className={styles.home__block_en}>
+								<span>{t('home.Courses')}</span>
+								<span>{t('home.prog')}</span>
+							</div>
+							<h1>{t('home.academy')}</h1>
+							<h2>OGOGO</h2>
 						</div>
+
 						<img className={styles.img} src={image} alt='img' />
 					</div>
 				)}

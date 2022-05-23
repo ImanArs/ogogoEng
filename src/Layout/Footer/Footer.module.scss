@@ -26,6 +26,7 @@
 		display: flex;
 		justify-content: space-between;
 		color: $footer--text--color;
+		max-width: 1440px;
 		width: calc(100vw - 172px);
 		margin: 0 auto 2.5rem auto;
 		@media all and (max-width: 992px) {
@@ -399,6 +400,7 @@
 	}
 	.footer__line {
 		border-bottom: 1px solid #7b7b7b;
+		max-width: 1440px;
 		width: calc(100vw - 172px);
 		margin: 0 auto;
 		@media all and (max-width: 992px) {
@@ -411,6 +413,7 @@
 	.footer__bottom {
 		display: flex;
 		justify-content: space-between;
+		max-width: 1440px;
 		width: calc(100vw - 172px);
 		margin: 2.5rem auto 4.5625rem auto;
 		@media all and (max-width: 992px) {

@@ -4,8 +4,8 @@
 	$faq--text--slider: #151515;
 	$faq--itemBackground--slider: #707070;
 
-	width: calc(100% - 120px);
-	max-height: 28rem;
+	max-width: 1440px;
+	width: calc(100vw - 60px);
 	margin: 0 auto;
 	display: flex;
 	justify-content: space-between;
@@ -151,7 +151,7 @@
 			}
 			@media all and (max-width: 430px) {
 				left: 15%;
-				top: 50%;
+				top: 60%;
 			}
 			@media all and (max-width: 320px) {
 				width: 1.5625rem;
@@ -189,7 +189,7 @@
 			@media all and (max-width: 575px) {
 				display: block;
 				left: 60%;
-				top: 40%;
+				top: 35%;
 				-webkit-transform: rotate(-10deg);
 				-moz-transform: rotate(-10deg);
 				-o-transform: rotate(-10deg);
@@ -479,6 +479,7 @@
 					letter-spacing: -0.06em;
 					width: 30rem;
 					margin: 0 auto;
+					text-align: center;
 					@media all and (max-width: 1024px) {
 						font-size: 0.875rem;
 					}
