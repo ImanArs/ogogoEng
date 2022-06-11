@@ -1,11 +1,11 @@
 .installment {
 	position: relative;
-	background: url('./Rectangle1278.png');
+	background: linear-gradient(60deg, rgba(36,37,38,1) 18%, rgba(58,73,148,1) 66%, rgba(18,26,64,1) 98%);
 	background-repeat: no-repeat;
 	background-size: cover;
 	width: 100%;
 	height: 15rem;
-	margin: 9.375rem 0 8.75rem 0;
+	margin: 5rem 0 4rem 0;
 	@media all and (max-width: 325px) {
 		width: 100% !important;
 		margin-top: 2rem;
@@ -49,7 +49,7 @@
 			position: absolute;
 			color: #fff;
 			top: 25%;
-			left: 7%;
+			left: 5%;
 			text-align: start;
 			@media all and (max-width: 770px) {
 				top: 25%;
@@ -87,29 +87,37 @@
 				border-radius: 10px;
 				background: none;
 				cursor: pointer;
-				transition: 1s;
+				transition: .3s;
 			}
 			button:hover {
-				color: black;
-				background: rgb(194, 194, 194);
+				border: 1px solid #3a4994;
+				background: #3a4994;
 			}
 		}
 		.icon__block {
 			position: absolute;
 			top: 15%;
 			left: 70%;
+			svg {
+				fill: #D3CCC3;
+				path {
+					width: 100px;
+					fill: #D3CCC3;
+				}
+			}
 			@media all and (max-width: 700px) {
 				display: none;
 			}
-			.dollar {
-				margin-right: 50px;
+			.telegram {
+				margin-right: 80px;
+
 				@media all and (max-width: 900px) {
 					width: 50px;
 					height: 50px;
 				}
 			}
-			.percent {
-				margin-bottom: 50px;
+			.opros {
+				margin-bottom: 80px;
 				@media all and (max-width: 900px) {
 					width: 50px;
 					height: 50px;

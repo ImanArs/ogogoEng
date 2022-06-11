@@ -1,0 +1,196 @@
+.edu {
+    width: 86%;
+    margin: 10px auto;
+    .education {
+        align-items: center;
+        display: flex;
+        justify-content: space-around;
+        @media all and (max-width: 1024px) {
+            width: 100% !important;
+        }
+        @media all and (max-width: 910px) {
+            width: 100% !important;
+            display: block;
+        }
+        @media all and (max-width: 575px) {
+            width: 100% !important;
+        }
+        @media all and (max-width: 425px) {
+            width: 100% !important;
+        }
+        @media all and (max-width: 375px) {
+            width: 100% !important;
+        }
+        @media all and (max-width: 325px) {
+            width: 10px !important;
+        }
+        .eduText {
+            width: 500px;
+            @media all and (max-width: 1024px) {
+                width: 100% !important;
+            }
+            @media all and (max-width: 910px) {
+                width: 100% !important;
+            }
+            @media all and (max-width: 575px) {
+                width: 100% !important;
+            }
+            @media all and (max-width: 425px) {
+                width: 100% !important;
+            }
+            @media all and (max-width: 375px) {
+                width: 100% !important;
+            }
+            @media all and (max-width: 325px) {
+                width: 10px !important;
+            }
+        }
+        img {
+            width: 500px;
+            border-radius: 25px;
+            border: 1px solid #3a3a3a;
+            @media all and (max-width: 1024px) {
+                width: 100% !important;
+            }
+            @media all and (max-width: 910px) {
+                width: 100% !important;
+            }
+            @media all and (max-width: 575px) {
+                width: 100% !important;
+            }
+            @media all and (max-width: 425px) {
+                width: 100% !important;
+            }
+            @media all and (max-width: 375px) {
+                width: 100% !important;
+            }
+            @media all and (max-width: 325px) {
+                width: 10px !important;
+            }
+        }
+    }
+    h3 {
+        letter-spacing: 0.1rem;
+        font-size: 2.25rem;
+        font-weight: 600;
+        margin: 2.5rem 0;
+    }
+    p {
+        line-height: 35px;
+        padding: 10px;
+        letter-spacing: 1px;
+        font-size: 1.25rem;
+        font-weight: 300;
+    }
+    span {
+        border-bottom: 4px solid #ff7a00;
+    }
+    .eduEurope {
+        margin: 20px 0;
+        display: flex;
+        justify-content: space-around;
+        @media all and (max-width: 1024px) {
+            width: 100% !important;
+        }
+        @media all and (max-width: 910px) {
+            width: 100% !important;
+        }
+        @media all and (max-width: 575px) {
+            width: 100% !important;
+        }
+        @media all and (max-width: 425px) {
+            width: 100% !important;
+            display: block;
+            margin: 0 auto;
+            justify-content: center;
+        }
+        @media all and (max-width: 375px) {
+            width: 100% !important;
+            justify-content: center;
+        }
+        @media all and (max-width: 325px) {
+            width: 10px !important;
+        }
+        .eduCard {
+            padding: 30px;
+            border-radius: 25px;
+            background: #f4f4f4;
+            // background: #eef1fc;
+            // box-shadow: 5px 5px 5px #d0d3e3;
+            box-shadow: 5px 5px 5px #c0c0c1;
+            @media all and (max-width: 1024px) {
+                width: 100% !important;
+            }
+            @media all and (max-width: 910px) {
+                width: 100% !important;
+            }
+            @media all and (max-width: 575px) {
+                width: 100% !important;
+            }
+            @media all and (max-width: 425px) {
+                width: 100% !important;
+                margin: 10px auto;
+            }
+            @media all and (max-width: 375px) {
+                width: 300px !important;
+            }
+            @media all and (max-width: 325px) {
+                width: 10px !important;
+            }
+            p {
+                font-size: 18px;
+                font-weight: 500;
+                @media all and (max-width: 1024px) {
+                    width: 100% !important;
+                }
+                @media all and (max-width: 910px) {
+                    width: 100% !important;
+                }
+                @media all and (max-width: 575px) {
+                    width: 100% !important;
+                }
+                @media all and (max-width: 425px) {
+                    width: 100% !important;
+                    font-size: 17px;
+                    font-weight: 600;
+                    line-height: 20px;
+                }
+                @media all and (max-width: 375px) {
+                    width: 100% !important;
+                }
+                @media all and (max-width: 325px) {
+                    width: 100% !important;
+                }
+            }
+            li{
+                padding: 0 0 10px 25px;
+                @media all and (max-width: 1024px) {
+                    width: 100% !important;
+                }
+                @media all and (max-width: 910px) {
+                    width: 100% !important;
+                }
+                @media all and (max-width: 575px) {
+                    width: 100% !important;
+                }
+                @media all and (max-width: 425px) {
+                    width: 100% !important;
+                    font-size: 16px;
+                    padding: 10px 0 5px 20px;
+                }
+                @media all and (max-width: 375px) {
+                    width: 100% !important;
+                }
+                @media all and (max-width: 325px) {
+                    width: 10px !important;
+                }
+            }
+            &:hover {
+                transition: .3s ease-in-out;
+                box-shadow: 2px 2px 5px #ff7a00;
+
+            }
+        }
+    }
+
+}

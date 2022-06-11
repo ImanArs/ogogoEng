@@ -1,0 +1,23 @@
+[
+    {
+     "id": 1,
+     "img": "https://i.ibb.co/G9fmr4R/Ella.jpg",
+     "name": "Ella",
+     "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam veritatis eligendi ratione culpa hic quia aut impedit et, ad quibusdam?",
+     "engText": "qwertyy"
+    },
+    {
+     "id": 2,
+     "img": "https://i.ibb.co/G9fmr4R/Ella.jpg",
+     "name": "Ella",
+     "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam veritatis eligendi ratione culpa hic quia aut impedit et, ad quibusdam?",
+     "engText": "qwertyy"
+    },
+    {
+     "id": 3,
+     "img": "https://i.ibb.co/G9fmr4R/Ella.jpg",
+     "name": "Ella",
+     "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam veritatis eligendi ratione culpa hic quia aut impedit et, ad quibusdam?",
+     "engText": "qwertyy"
+    }
+   ]

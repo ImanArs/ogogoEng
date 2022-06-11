@@ -1,3 +1,6 @@
+.logo img {
+	width: 60px;
+}
 .footer {
 	$footer--text--color: #fff;
 	$footerBackground: #1c1c1c;
@@ -438,20 +441,35 @@
 			@media all and (max-width: 320px) {
 				display: none;
 			}
-			svg {
-				width: 43px;
-				height: 28px;
+			img {
+				width: 50px;
+				margin-top: -15px;
+				// height: 40px;
+			}
+		}
+		.address {
+			color: #fff;
+			@media all and (max-width: 575px) {
+				margin-top: 5px;
+				font-size: 12px;
+				span{
+					display: none;
+				}
 			}
 		}
 		.footer__social {
 			display: flex;
-
-			.footer__ins {
+			align-items: center;
+			.footer__wa {
 				margin-right: 20px;
 
 				svg {
 					cursor: pointer;
 				}
+			}
+			.footer__ins {
+				margin-right: 20px;
+
 			}
 
 			.footer__TG {

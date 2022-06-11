@@ -1,0 +1,63 @@
+.mySwiper {
+    width: 96%;
+    height: 400px;
+    align-items: center;
+    padding: 20px;
+    .revCard {
+        display: flex;
+        // height: 320px;
+        border-radius: 25px;
+        padding: 20px 15px;
+        box-shadow: 5px 5px 5px #c0c0c1;
+        background-color: #f4f4f4;
+        @media all and (max-width: 1024px) {
+            width: 100% !important;
+        }
+        @media all and (max-width: 910px) {
+            width: 100% !important;
+        }
+        @media all and (max-width: 575px) {
+            width: 100% !important;
+        }
+        @media all and (max-width: 425px) {
+            width: 100% !important;
+        }
+        @media all and (max-width: 375px) {
+            width: 100% !important;
+        }
+        @media all and (max-width: 325px) {
+            width: 10px !important;
+        }
+        .revWrapper {
+            width: 400px;
+        }
+        .revImg {
+            img {
+                width: 70px;
+            }
+        }
+        .revText {
+            margin: 40px 0;
+            @media all and (max-width: 1024px) {
+                width: 100% !important;
+            }
+            @media all and (max-width: 910px) {
+                width: 100% !important;
+            }
+            @media all and (max-width: 575px) {
+                width: 100% !important;
+                font-size: 13px;
+                overflow: scroll;
+            }
+            @media all and (max-width: 425px) {
+                width: 100% !important;
+            }
+            @media all and (max-width: 375px) {
+                width: 100% !important;
+            }
+            @media all and (max-width: 325px) {
+                width: 10px !important;
+            }
+        }
+    }
+}
