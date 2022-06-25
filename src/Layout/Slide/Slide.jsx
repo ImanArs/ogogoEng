@@ -3,6 +3,7 @@ import styles from './Slide.module.scss'
 // import { useTranslation } from 'react-i18next'
 import '../../i18next.js'
 import OgogoImg from './img/ogogo.jpg'
+import EduImg from './img/education.jpg'
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay } from 'swiper';
@@ -26,13 +27,13 @@ const Slide = () => {
         className={styles.mySwiper}
 				>
 				<SwiperSlide>
-					<div className={styles.ogog} >
-						<img src={OgogoImg} width={1500} alt="asd" />
+					<div className={styles.ogogo} >
+						{/* <img src={OgogoImg} width={1350} alt="asd" /> */}
 					</div>
 				</SwiperSlide>
 				<SwiperSlide>
 					<div className={styles.process} >
-						tyghjk
+					{/* <img src={EduImg} width={1350} alt="asd" /> */}
 					</div>
 				</SwiperSlide>
 				<SwiperSlide>

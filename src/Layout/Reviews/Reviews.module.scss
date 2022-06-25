@@ -3,9 +3,28 @@
     height: 400px;
     align-items: center;
     padding: 20px;
+    @media all and (max-width: 1024px) {
+        width: 100% !important;
+    }
+    @media all and (max-width: 910px) {
+        width: 100% !important;
+    }
+    @media all and (max-width: 575px) {
+        width: 100% !important;
+        height: 400px;
+    }
+    @media all and (max-width: 425px) {
+        width: 100% !important;
+    }
+    @media all and (max-width: 375px) {
+        width: 100% !important;
+    }
+    @media all and (max-width: 325px) {
+        width: 10px !important;
+    }
     .revCard {
         display: flex;
-        // height: 320px;
+        height: 340px;
         border-radius: 25px;
         padding: 20px 15px;
         box-shadow: 5px 5px 5px #c0c0c1;
@@ -28,8 +47,18 @@
         @media all and (max-width: 325px) {
             width: 10px !important;
         }
+        &:hover {
+            transition: all .3s ease-out;
+            box-shadow: 1px 1px 5px #fe9737;
+        }
         .revWrapper {
             width: 400px;
+            .revName {
+                font-size: 15px;
+                span {
+                    color: #fe9737;
+                }
+            }
         }
         .revImg {
             img {
@@ -38,6 +67,9 @@
         }
         .revText {
             margin: 40px 0;
+            font-size: 15px;
+            height: 110%;
+            // line-height: 20px;
             @media all and (max-width: 1024px) {
                 width: 100% !important;
             }

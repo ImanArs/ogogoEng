@@ -3,9 +3,6 @@ import styles from './Teachers.module.scss'
 import axios from 'axios'
 import { useTranslation } from 'react-i18next'
 import '../../i18next'
-// import { t } from 'i18next'
-
-// import Ella from './img/Ella.jpg'
 
 const Teachers = ({info, setInfo}) => {
 
@@ -14,29 +11,26 @@ const Teachers = ({info, setInfo}) => {
   
     
     useEffect(() => {
+      if (localStorage.getItem('i18nextLng') !== '') {
+        setInfo(localStorage.getItem('i18nextLng'))
+      }
       componentDidMount()
       setIsActive(false)
-    }, [isActive])
+    },[isActive], [info])
 
     const componentDidMount = () => {
       if (data.length < 1) {
         axios
-          .get(`https://620f994cec8b2ee28345f5a4.mockapi.io/teachersOgogo`)
+          .get(`https://62176bfc71e7672e537e0afe.mockapi.io/ogogo-english`)
           .then(res => {
             const dat = res.data
             setData(dat)
-            console.log(dat);
           })
       }
     }
-      const { t } = useTranslation()
-      useEffect(() => {
-        if (localStorage.getItem('i18nextLng') !== '') {
-          setInfo(localStorage.getItem('i18nextLng'))
-        }
-      }, [info])
-
-
+    
+    const { t } = useTranslation()
+    
   return (
     <div className={styles.teachers} id='teachers' >
       <h2><span>{t('teachers.title')}</span></h2>

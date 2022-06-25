@@ -50,7 +50,8 @@
             border-radius: 25px;
             border: 1px solid #3a3a3a;
             @media all and (max-width: 1024px) {
-                width: 100% !important;
+                // width: 100% ;
+                width: 450px!important;
             }
             @media all and (max-width: 910px) {
                 width: 100% !important;
@@ -88,7 +89,7 @@
     .eduEurope {
         margin: 20px 0;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         @media all and (max-width: 1024px) {
             width: 100% !important;
         }
@@ -112,7 +113,9 @@
             width: 10px !important;
         }
         .eduCard {
-            padding: 30px;
+            width: 600px;
+            margin: 0 5px;
+            padding: 20px;
             border-radius: 25px;
             background: #f4f4f4;
             // background: #eef1fc;

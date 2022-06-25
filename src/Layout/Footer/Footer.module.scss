@@ -425,8 +425,9 @@
 			margin: 2.5rem auto 3.937rem auto;
 		}
 		@media all and (max-width: 767px) {
-			width: 44.1875rem;
+			width: 39rem;
 			margin: 1.25rem 0 1.875rem 1.875rem;
+			justify-content: space-between;
 		}
 		@media all and (max-width: 575px) {
 			width: 20rem;
@@ -449,17 +450,53 @@
 		}
 		.address {
 			color: #fff;
+			margin: 0 20px;
+			@media all and (max-width: 1024px) {
+				width: 100% !important;
+			}
+			@media all and (max-width: 910px) {
+				width: 100% !important;
+			}
 			@media all and (max-width: 575px) {
+				width: 100% !important;
 				margin-top: 5px;
 				font-size: 12px;
 				span{
 					display: none;
 				}
 			}
+			@media all and (max-width: 425px) {
+				width: 100% !important;
+			}
+			@media all and (max-width: 375px) {
+				width: 100% !important;
+			}
+			@media all and (max-width: 325px) {
+				width: 10px !important;
+			}
+			
 		}
 		.footer__social {
 			display: flex;
 			align-items: center;
+			@media all and (max-width: 1024px) {
+				width: 100% !important;
+			}
+			@media all and (max-width: 910px) {
+				width: 100% !important;
+			}
+			@media all and (max-width: 575px) {
+				width: 100% !important;
+			}
+			@media all and (max-width: 425px) {
+				width: 100% !important;
+			}
+			@media all and (max-width: 375px) {
+				width: 100% !important;
+			}
+			@media all and (max-width: 325px) {
+				width: 10px !important;
+			}
 			.footer__wa {
 				margin-right: 20px;
 

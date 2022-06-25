@@ -24,15 +24,69 @@
 		"learn": "Learn.",
 		"create": "Create."
 	},
+	"about": {
+		"title": "About us",
+		"text": "Ogogo English is a licensed educational institution that opened in 2020 and since then has been helping people of all ages to learn English to different levels in a short time. The company's goal is simple: to get rid of the so-called «language barrier» and teach them to speak English everywhere they meet."
+	},
 	"installment": {
 		"installments": "Take the test for free and find out your level of English",
 		"down": "take a free test in our telegram bot",
 		"req": "Take the test"
 	},
+	"education": {
+		"title": "Education",
+		"text": "Ogogo English teaches in a hybrid 3/2 system, combining Grammar and Talking club classes in turn. The hybrid system 3/2 is: The training week lasts 5 days, of which 3 days are devoted to Grammar classes and 2 days to Talking club classes, each of the mentioned types of classes lasts 90 minutes. What level of English can you achieve with Ogogo English? .",
+		"text2": "Beginner (0) - the step from which you start life with the English language. Vocabulary - from 500 to 700 words and expressions. Elementary (A1) - the level of «I already know something», but only if they speak clearly and slowly. Vocabulary - from 1000 to 1500 words and expressions. Pre-Intermediate (A2) - the level of «feeling that I know everything», but subtitles are always needed and sometimes with translation. Vocabulary - from 2000 words and expressions. Intermediate (B1) - level «almost God», but English subtitles are still needed if the accent is too unfamiliar. Vocabulary - from 4000 words and expressions. Upper-Intermediate (B2) - the level of «what, is there something further?», But you really know almost everything. Advanced (C1) - the level of «tired, hard», because before the carrier one more level."
+	},
+	"studyEU": {
+		"title": "Study in Europe",
+		"text": "Ogogo English is not only an English language course, but also a partner of Next Generation. They help schoolchildren and students to enter European universities for undergraduate and graduate programs. For 2 years, more than 200 students were sent.",
+		"column": {
+			"title": "Our team accompanies students from A to Z:",
+			"li1": "Advice on all aspects of life in Europe",
+			"li2": "Assistance in choosing a profession and university",
+			"li3": "Motivation and support at all stages of admission",
+			"li4": "Visa support",
+			"li5": "Meeting at the airport",
+			"li6": "Joint trip to the university",
+			"li7": "And assistance in adaptation in the country"
+		},
+		"column2": {
+			"title": "We ship to countries such as :",
+			"li1": "- Poland - Lazarski, PJATK, Colleqium Civitas, etc.",
+			"li2": "-Italy - La Sapienza University, Tor Vergata University, Bologna University, etc.",
+			"li3": "-Austria- University of Vienna, University of Economics and Business",
+			"li4": "-Germany - Berufsschule",
+			"li5": "-Hungary - METU, Debreceni Egyetem, University of Szeged and others"
+		}
+	},
 	"teachers":{
 		"title": "Our teachers"
 	},
+	"reviews":{
+		"student": "student OgogoEnglish",
+		"rev1": {
+			"revName": "Adil",
+			"revText": "In the 21st century, English is an integral part of our lives, I think that everyone will agree with this. Knowledge of different languages is our future, this is the basis of the foundations and this is our foundation. So I believe that if you want to have a solid foundation and be in good hands, then Ogogo Eng will undoubtedly help you with this!"
+		},
+		"rev2": {
+			"revName": "Azamat",
+			"revText": "When I first came to the OGOGO English courses, I had very poor English and a problem with English tenses. And I need to know English, because English is needed for my future profession. They gave me a very big push and motivation in learning the language. And thanks to the teachers, I began to understand and speak English without getting confused in times."
+		},
+		"rev3": {
+			"revName": "Asel",
+			"revText": "I came to the OGOGO English school to learn how to speak and understand English fluently and correctly. For me, English is, first of all, an opportunity to work in a promising company and travel. Today, I am satisfied with my progress and it's all thanks to the teachers from Ogogo English."
+		},
+		"rev4": {
+			"revName": "Dastan",
+			"revText": "I work at OgogoEng. It is interesting to study, there are often cool activities, there are conversation clubs. The main difference from English at school is that you do not adapt to the school, but the school adapts to you."
+		}
+	},
 	"Footer": {
+		"map": {
+			"city": "Location: KR, Bishkek,  ",
+			"street": "Ibraimov street 115/1"
+		},
 		"top": {
 			"one": "License for educational",
 			"two": "activities №LS200001652 from December 3rd 2020",

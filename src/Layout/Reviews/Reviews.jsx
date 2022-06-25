@@ -24,16 +24,18 @@ const Reviews = () => {
 
     if (window.screen.availWidth <= 425 ) {
       setState(1)
-    } else if (window.screen.availWidth <= 768 ) {
+    } else if (window.screen.availWidth <= 850 ) {
       setState(2)
     } else {
       setState(3)
     }
-    
+    console.log(window.screen.availWidth);
   }
 
+
+  // console.log(window.screen);
   useEffect(() => {
-    if (state == 0) {
+    if (state === 0) {
       change()
     }
     setIsActive(!isActive)
@@ -54,11 +56,11 @@ const Reviews = () => {
         
 				<SwiperSlide className={styles.revCard} >
             <div className={styles.revWrapper} >
-              <div>
-                <h2>арсен <span>ученик огого инглиш</span></h2>
+              <div className={styles.revName} >
+                <h2>{t('reviews.rev1.revName')} <span>{t('reviews.student')} </span></h2>
               </div>
               <div className={styles.revText} >
-                <p>В 21 веке английский язык - неотъемлемая часть нашей жизни, я думаю, что все с этим согласятся. Знание разных языков - это наше будущее, это основа основ и это наш фундамент. Так вот я считаю, что если вы хотите иметь надежный фундамент и быть в хороших руках, то Ogogo Eng несомненно вам в этом поможет!</p>
+                <p>{t('reviews.rev1.revText')} </p>
               </div>
             </div>
             <div className={styles.revImg} >
@@ -67,11 +69,11 @@ const Reviews = () => {
         </SwiperSlide>
         <SwiperSlide className={styles.revCard} >
             <div className={styles.revWrapper} >
-              <div>
-                <h2>арсен <span>ученик огого инглиш</span></h2>
+              <div className={styles.revName}>
+                <h2>{t('reviews.rev2.revName')} <span>{t('reviews.student')} </span></h2>
               </div>
               <div className={styles.revText} >
-                <p>Когда я пришел в первые на курсы «OGOGO English», у меня был очень плохой английский и проблема с временами английского. А мне нужно знать английский, так как английский нужен для моей будущей профессии. Они дали мне очень большой толчок и мотивацию в изучении  языка. И благодаря преподователям, я начал понимать и разговаривать на английском не запутываясь во временах.</p>
+                <p>{t('reviews.rev2.revText')}</p>
               </div>
             </div>
             <div className={styles.revImg} >
@@ -80,11 +82,11 @@ const Reviews = () => {
         </SwiperSlide>
         <SwiperSlide className={styles.revCard} >
             <div className={styles.revWrapper} >
-              <div>
-                <h2>арсен <span>ученик огого инглиш</span></h2>
+              <div className={styles.revName}>
+                <h2>{t('reviews.rev3.revName')} <span>{t('reviews.student')} </span></h2>
               </div>
               <div className={styles.revText} >
-                <p>Я пришла в школу "English Master " чтобы научится свободно и правильно говорить и понимать английский язык. Для меня английский язык это прежде всего, возможность работать в перспективной компании и путешествовать.На сегодняшний день, я довольна своими успехами и это все благодаря педагогам из Ogogo English.</p>
+                <p>{t('reviews.rev3.revText')}</p>
               </div>
             </div>
             <div className={styles.revImg} >
@@ -93,11 +95,11 @@ const Reviews = () => {
         </SwiperSlide>
         <SwiperSlide className={styles.revCard} >
             <div className={styles.revWrapper} >
-              <div>
-                <h2>арсен <span>ученик огого инглиш</span></h2>
+              <div className={styles.revName}>
+                <h2>{t('reviews.rev4.revName')} <span>{t('reviews.student')} </span></h2>
               </div>
               <div className={styles.revText} >
-                <p>В 21 веке английский язык - неотъемлемая часть нашей жизни, я думаю, что все с этим согласятся. Знание разных языков - это наше будущее, это основа основ и это наш фундамент. Так вот я считаю, что если вы хотите иметь надежный фундамент и быть в хороших руках, то Ogogo Eng несомненно вам в этом поможет!</p>
+                <p>{t('reviews.rev4.revText')}</p>
               </div>
             </div>
             <div className={styles.revImg} >

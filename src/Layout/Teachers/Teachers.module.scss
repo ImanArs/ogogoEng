@@ -25,10 +25,6 @@
         font-size: 2.25rem;
         font-weight: 500;
         height: 50px;
-        &:hover {
-            transition: .1s ease-in-out;
-            font-size: 2.5rem; 
-        }
         @media all and (max-width: 1024px) {
 			width: 100% !important;
 		}
@@ -61,11 +57,15 @@
         justify-content: center;
         // height: 300px;
         @media all and (max-width: 1024px) {
-            width: 100% !important;
+            // width: 100% !important;
+            grid-template-columns: 320px 320px 320px ;
+            margin: 0;
+            grid-gap: 1rem;
         }
         @media all and (max-width: 910px) {
             width: 100% !important;
-            grid-template-columns: 350px 350px ;
+            grid-gap: 1rem;
+            grid-template-columns: 320px 320px ;
         }
         @media all and (max-width: 575px) {
             width: 100% !important;
@@ -90,7 +90,8 @@
             padding: 30px;
 
             @media all and (max-width: 1024px) {
-                width: 100% !important;
+                width: 270px !important;
+                margin: 0 20px;
             }
             @media all and (max-width: 910px) {
                 width: 300px !important;
