@@ -21,7 +21,12 @@ const Education = () => {
             <img src={OgogoElla} alt="" />
           </div>
         </div>
-          <p>{t('education.text2')}</p>
+          <p>{t('education.text2.beginner')}</p>
+          <p>{t('education.text2.elementary')}</p>
+          <p>{t('education.text2.preInt')}</p>
+          <p>{t('education.text2.int')}</p>
+          <p>{t('education.text2.upperInt')}</p>
+          <p>{t('education.text2.advanced')}</p>
           <div   id="study">
             <h3><span>{t('studyEU.title')}</span></h3>
             <p>{t('studyEU.text')} </p>

@@ -21,7 +21,8 @@ const Teachers = ({info, setInfo}) => {
     const componentDidMount = () => {
       if (data.length < 1) {
         axios
-          .get(`https://62176bfc71e7672e537e0afe.mockapi.io/ogogo-english`)
+        // .get(`https://62176bfc71e7672e537e0afe.mockapi.io/ogogo-english`)
+          .get(`https://620f994cec8b2ee28345f5a4.mockapi.io/teachersOgogo`)
           .then(res => {
             const dat = res.data
             setData(dat)

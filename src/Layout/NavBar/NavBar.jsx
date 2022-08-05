@@ -2,6 +2,8 @@ import { Link, useLocation } from 'react-router-dom'
 import styles from './NavBar.module.scss'
 import { useTranslation } from 'react-i18next'
 import '../../i18next.js'
+// import Link from 'react-scroll'
+ 
 const NavBar = () => {
 	let location = useLocation()
 	const { t } = useTranslation()
@@ -10,7 +12,7 @@ const NavBar = () => {
 			{location.pathname === '/' ? (
 				<ul className={styles.nav__active}>
 					<li>
-						<a href='#about'>{t('navBar.about')}</a>
+						<a activeClass="active" to="about" spy={true} smooth={true} offset={50} duration={500}  href='#about'>{t('navBar.about')}</a>
 					</li>
 					<li>
 						<a href='#installment'>{t('navBar.education')}</a>

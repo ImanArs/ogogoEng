@@ -1,23 +1,34 @@
 [
-    {
-     "id": 1,
-     "img": "https://i.ibb.co/G9fmr4R/Ella.jpg",
-     "name": "Ella",
-     "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam veritatis eligendi ratione culpa hic quia aut impedit et, ad quibusdam?",
-     "engText": "qwertyy"
-    },
-    {
-     "id": 2,
-     "img": "https://i.ibb.co/G9fmr4R/Ella.jpg",
-     "name": "Ella",
-     "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam veritatis eligendi ratione culpa hic quia aut impedit et, ad quibusdam?",
-     "engText": "qwertyy"
-    },
-    {
-     "id": 3,
-     "img": "https://i.ibb.co/G9fmr4R/Ella.jpg",
-     "name": "Ella",
-     "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam veritatis eligendi ratione culpa hic quia aut impedit et, ad quibusdam?",
-     "engText": "qwertyy"
-    }
-   ]
+  {
+    "id": 1,
+    "img": "https://i.ibb.co/ScmY8rF/Lira.jpg",
+    "name": "Лира",
+    "engName": "Lira",
+    "text": "Всем привет! Меня зовут Лира. Являясь менеджером и ментором английского языка в Ogogo English, я также успеваю заниматься личным саморазвитием. Преимущество моих занятий заключаются, как в умении доступно объяснять материал, так и в коммуникабельном подходе к каждому ученику.",
+    "engText": "Hi all! My name is Lira and I'm 21. As a manager and English mentor at Ogogo English, I also have time for personal development. The advantage of my classes is both in the ability to explain the material in an accessible way, and in a communicative approach to each student."
+  },
+  {
+    "id": 2,
+    "img": "https://i.ibb.co/QJDs859/Begi.jpg",
+    "name": "Бегимай",
+    "engName": "Begimai",
+    "text": "Всем привет. Меня зовут Бегимай. Изучаю я английский с самых малых лет. Также являюсь выпускницей программы обмена FLEX 2016-2017. Английский дал мне уверенность в себе, гибкость в общении и, конечно же, миллион возможностей. Независимо от ваших потребностей в английском языке, я могу помочь вам достичь ваших целей.",
+    "engText": "Hi all. My name is Begimai, I'm 21. I've been studying English since I was a child. I am also a graduate of the FLEX 2016-2017 exchange program. English gave me self-confidence, flexibility in communication and, of course, a million opportunities. Whatever your English language needs, I can help you achieve your goals."
+  },
+  {
+    "id": 3,
+    "img": "https://i.ibb.co/G9fmr4R/Ella.jpg",
+    "name": "Элла",
+    "engName": "Ella",
+    "text": "Всем привет, меня зовут Эльзада,  и я выпускница FLEX 2019-2020 года. Я выучила английский благодаря большому желанию и мотивации. Английский дал мне раскрепощенность. На наших уроках мы будем читать много статей и книг, смотреть фильмы и интервью и обсуждать все, что вам интересно.",
+    "engText": "Hello everyone, my name is Elzada. I am 20 years old and I am a 2019-2020 FLEX graduate. I learned English thanks to great desire and motivation. English gave me freedom. In our lessons we will read a lot of articles and books, watch films and interviews and discuss everything that interests you."
+  },
+  {
+    "id": 4,
+    "img": "https://i.ibb.co/G9fmr4R/Ella.jpg",
+    "name": "Гули",
+    "engName": "Guli",
+    "text": "Hi there! Меня зовут Гули. С английским меня связывает большая любовь. С гордостью всем говорю, что этот язык я выучила сама. Тем самым показывая, что абсолютно каждый может его изучить. Главное, большое желание и упорное стремление! Кроме преподавания, я являюсь практикующим врачом-хирургом. На своих уроках я нахожу индивидуальный подход к каждому студенту и пытаюсь стать для ребят Ментором и Другом. На уроках всегда царит веселая, спокойная атмосфера. Как и во всем Ogogo Academy!",
+    "engText": "Hi there! My name is Guli.  I have a big love for English.  I am proud to say to everyone that I learned this language by myself.  Thereby showing that absolutely everyone can study it.  The main thing is a great desire and persistent aspiration!  Besides of teaching, I am a practicing surgeon.  In my lessons, I find an individual approach to each student and try to become a Mentor and Friend for guys.  There is always a cheerful, calm atmosphere in our lessons. As with everything in Ogogo Academy!"
+  }
+]

@@ -29,11 +29,8 @@ const Reviews = () => {
     } else {
       setState(3)
     }
-    console.log(window.screen.availWidth);
   }
 
-
-  // console.log(window.screen);
   useEffect(() => {
     if (state === 0) {
       change()

@@ -1,9 +1,8 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import styles from './Slide.module.scss'
 // import { useTranslation } from 'react-i18next'
 import '../../i18next.js'
-import OgogoImg from './img/ogogo.jpg'
-import EduImg from './img/education.jpg'
+import axios from 'axios'
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay } from 'swiper';
@@ -15,6 +14,26 @@ import 'swiper/css/autoplay';
 
 const Slide = () => {
 	// const { t } = useTranslation()
+
+	const [data, setData ] = useState([])
+  const [isActive, setIsActive] = useState(false)
+  
+    
+    useEffect(() => {
+      componentDidMount()
+      setIsActive(false)
+    },[isActive])
+
+    const componentDidMount = () => {
+        axios
+        // .get(`https://62176bfc71e7672e537e0afe.mockapi.io/ogogo-english`)
+          .get(`https://620f994cec8b2ee28345f5a4.mockapi.io/slider`)
+          .then(res => {
+            const dat = res.data
+            setData(dat)
+			console.log(dat);
+          })
+    }
 	
 	return (
 		<div>
@@ -26,21 +45,17 @@ const Slide = () => {
 				slidesPerView={1}
         className={styles.mySwiper}
 				>
-				<SwiperSlide>
-					<div className={styles.ogogo} >
-						{/* <img src={OgogoImg} width={1350} alt="asd" /> */}
-					</div>
-				</SwiperSlide>
-				<SwiperSlide>
-					<div className={styles.process} >
-					{/* <img src={EduImg} width={1350} alt="asd" /> */}
-					</div>
-				</SwiperSlide>
-				<SwiperSlide>
-					<div className={styles.study} >
-
-					</div>
-				</SwiperSlide>
+					{data.map( item => {
+						return (
+							<SwiperSlide key={item.id}>
+							<div className={styles.slideImg} >
+								{/* <img src={OgogoImg} width={1350} alt="asd" /> */}
+								<img src={item.img} alt="img" />
+							</div>
+						</SwiperSlide>
+						)
+					})}
+				
 				</Swiper>
 		</div>
 	)

@@ -6,7 +6,8 @@ import Slide from './Slide/Slide'
 import styles from './Home.module.scss'
 import { useTranslation } from 'react-i18next'
 import '../i18next'
-import image from './mainIllustartion.png'
+import image from './london_bg.png'
+// import image from './mainIllustartion.png'
 import Education from './Education/Education'
 import Reviews from './Reviews/Reviews'
 import Teachers from './Teachers/Teachers'
@@ -53,8 +54,8 @@ const Home = () => {
 					</div>
 				)}
 			</div>
-			<Slide />
 			<ContactUs id='contact' />
+			<Slide />
 			<About />
 			<Education />
 			<Teachers info={info} setInfo={setInfo} />
