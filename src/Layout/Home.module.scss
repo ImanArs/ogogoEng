@@ -96,6 +96,10 @@
 					line-height: 70px;
 				}
 			}
+			h3 {
+				font-size: 70px;
+				font-weight: 200;
+			}
 		}
 		img {
 			order: 1;
@@ -143,6 +147,10 @@
 			@media all and (max-width: 770px) {
 				position: static;
 			}
+			h3 {
+				font-size: 70px;
+				font-weight: 200;
+			}
 			.home__block_en {
 				margin-bottom: 15px;
 				order: 1;
@@ -152,6 +160,7 @@
 				@media all and (max-width: 570px) {
 					order: 1;
 				}
+				
 				span {
 					font-size: 20px;
 					font-style: normal;

@@ -7,11 +7,9 @@ import styles from './Home.module.scss'
 import { useTranslation } from 'react-i18next'
 import '../i18next'
 import image from './london_bg.png'
-// import image from './mainIllustartion.png'
 import Education from './Education/Education'
 import Reviews from './Reviews/Reviews'
 import Teachers from './Teachers/Teachers'
-import Map from './Map/Map'
 
 const Home = () => {
 	const { t } = useTranslation()
@@ -35,7 +33,7 @@ const Home = () => {
 							</div>
 							{/* <h1>{t('home.academy')}</h1> */}
 							<h2>OGOGO</h2>
-							<h2>English</h2>
+							<h3>English</h3>
 						</div>
 
 						<img className={styles.img} src={image} alt='img' />
@@ -47,7 +45,8 @@ const Home = () => {
 								<span>{t('home.prog')}</span>
 							</div>
 							{/* <h1>{t('home.academy')}</h1> */}
-							<h2>OGOGO English</h2>
+							<h2>OGOGO</h2>
+							<h3>English</h3>
 						</div>
 
 						<img className={styles.img} src={image} alt='img' />
@@ -60,8 +59,6 @@ const Home = () => {
 			<Education />
 			<Teachers info={info} setInfo={setInfo} />
 			<Reviews />
-			{/* <Installment /> */}
-			{/* <Map /> */}
 		</>
 	)
 }
