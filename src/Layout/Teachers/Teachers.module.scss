@@ -1,6 +1,25 @@
 .teachers {
-    padding: 20px ;
     text-align: center;
+    align-items: center;
+    justify-content: center;
+    
+    h2 {
+        letter-spacing: 1px;
+        font-size: 2.25rem;
+        font-weight: 500;
+        height: 50px;
+        
+    }
+    .underSlide {
+        border-bottom: 4px solid #ff7a00;
+        
+    }
+}
+.mySwiper {
+    width: 100%;
+    max-width: 1440px;
+    // height: 400px;
+    align-items: center;
     @media all and (max-width: 1024px) {
         width: 100% !important;
     }
@@ -9,6 +28,7 @@
     }
     @media all and (max-width: 575px) {
         width: 100% !important;
+        // height: 650px;
     }
     @media all and (max-width: 425px) {
         width: 100% !important;
@@ -17,136 +37,68 @@
         width: 100% !important;
     }
     @media all and (max-width: 325px) {
-        margin: 0;
+        width: 10px !important;
     }
-    h2 {
-        // width: 15%;
-        letter-spacing: 1px;
-        font-size: 2.25rem;
-        font-weight: 500;
-        height: 50px;
-        @media all and (max-width: 1024px) {
-			width: 100% !important;
-		}
-		@media all and (max-width: 910px) {
-			width: 100% !important;
-		}
-		@media all and (max-width: 575px) {
-			width: 100% !important;
-		}
-		@media all and (max-width: 425px) {
-			width: 100% !important;
-		}
-		@media all and (max-width: 375px) {
-			width: 100% !important;
-		}
-		@media all and (max-width: 325px) {
-			margin: 0;
-		}
+    .tchWrapper{
+        background-color: #f4f4f4;
+        padding: 40px 20px;
+        border-radius: 15px;
+        box-shadow: 5px 5px 5px #e2e2e2;
     }
-    span {
-        border-bottom: 4px solid #ff7a00;
-        
-    }
-    .tchList {
-        margin: 30px 0;
-        display: grid;
-        // padding: 20px 0 ;
-        grid-template-columns: 420px 420px 420px ;
-        grid-gap: 1em;
-        justify-content: center;
-        // height: 300px;
-        @media all and (max-width: 1024px) {
-            // width: 100% !important;
-            grid-template-columns: 320px 320px 320px ;
-            margin: 0;
-            grid-gap: 1rem;
+    .tchCard {
+        width: 300px; 
+        padding: 40px 60px;
+        .tchImg{
+            img {
+                width: 200px;
+                height: 250px;
+                border-radius: 25px;
+            }
         }
-        @media all and (max-width: 910px) {
-            width: 100% !important;
-            grid-gap: 1rem;
-            grid-template-columns: 320px 320px ;
-        }
-        @media all and (max-width: 575px) {
-            width: 100% !important;
-        }
-        @media all and (max-width: 425px) {
-            width: 100% !important;
-            grid-template-columns: 350px;
-        }
-        @media all and (max-width: 375px) {
-            width: 100% !important;
-        }
-        @media all and (max-width: 325px) {
-            margin: 0;
-        }
-        .tchCard {
-            // border: 1px solid #dfe0e6;
-            box-shadow: 5px 5px 5px #c0c0c1;
-            border-radius: 25px;
-            background: #f4f4f4;
-            width: 300px;
-            margin: 0 60px;
-            padding: 30px;
-
+        .tchText {
+            ::-webkit-scrollbar{
+                width: 5px;
+            }
+            ::-webkit-scrollbar-button{
+            }
+            ::-webkit-scrollbar-thumb{
+                background-color: #ff7a00;
+                border-radius: 25px;
+            }
+            h3 {
+                padding-top: 10px;
+                font-weight: 500;
+            }
+            p {
+                height: 300px;
+                padding: 10px;
+                font-size: 17px;
+                font-weight: 300;
+                overflow-y: auto;
+                @media all and (max-width: 575px) {
+                    width: 100% !important;
+                    font-size: 16px;
+                }
+            }
             @media all and (max-width: 1024px) {
-                width: 270px !important;
-                margin: 0 20px;
+                width: 100% !important;
             }
             @media all and (max-width: 910px) {
-                width: 300px !important;
-                margin: 0 20px;
+                width: 100% !important;
             }
             @media all and (max-width: 575px) {
                 width: 100% !important;
             }
             @media all and (max-width: 425px) {
-                width: 300px !important;
-                margin: 0 20px;
+                width: 100% !important;
             }
             @media all and (max-width: 375px) {
-                width: 300px !important;
-                margin: 0 20px;
+                width: 100% !important;
             }
             @media all and (max-width: 325px) {
                 width: 10px !important;
             }
-            .tchText {
-                padding: 10px 0;
-                p {
-                    padding: 10px 0;
-                    text-align: start;
-                }
-            }
-            .tchImg {
-                img {
-                    border-radius: 10px;
-                    width: 200px;
-                    @media all and (max-width: 1024px) {
-                        width: 100% !important;
-                    }
-                    @media all and (max-width: 910px) {
-                        width: 100% !important;
-                    }
-                    @media all and (max-width: 575px) {
-                        width: 100% !important;
-                    }
-                    @media all and (max-width: 425px) {
-                        width: 200px !important;
-                    }
-                    @media all and (max-width: 375px) {
-                        width: 200px !important;
-                    }
-                    @media all and (max-width: 325px) {
-                        width: 100px !important;
-                    }
-                }
-            }
-            &:hover {
-                transition: .3s ease-in-out;
-                box-shadow: 1px 3px 5px #ff7a00;
-            }
         }
-
     }
+
 }
